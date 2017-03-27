@@ -1,0 +1,17 @@
+wget http://www-eu.apache.org/dist//httpd/httpd-2.4.23.tar.gz
+
+tar xzf httpd-2.4.23.tar.gz
+
+cd httpd-2.4.23
+
+./configure --prefix=/opt/httpd
+
+yum install 
+	apr-devel
+	apr-util-devel
+	gcc
+	pcre-devel
+
+make clean 
+make 
+make install
